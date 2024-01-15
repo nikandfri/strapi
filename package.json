@@ -1,7 +1,7 @@
 {
   "name": "strapi",
   "private": true,
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "A Strapi application",
   "scripts": {
     "develop": "strapi develop",
@@ -29,7 +29,7 @@
     "uuid": "3bab717f-a510-4824-8722-d51614ae2f53"
   },
   "engines": {
-    "node": "20.11.0",
+    "node": "20.11.x",
     "npm": ">=6.0.0"
   },
   "license": "MIT"
