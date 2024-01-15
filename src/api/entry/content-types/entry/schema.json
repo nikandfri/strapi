@@ -1,0 +1,31 @@
+{
+  "kind": "singleType",
+  "collectionName": "entries",
+  "info": {
+    "singularName": "entry",
+    "pluralName": "entries",
+    "displayName": "entry",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "quadrant": {
+      "type": "integer"
+    },
+    "ring": {
+      "type": "integer"
+    },
+    "label": {
+      "type": "string"
+    },
+    "active": {
+      "type": "boolean"
+    },
+    "moved": {
+      "type": "integer"
+    }
+  }
+}
