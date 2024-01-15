@@ -1,11 +1,10 @@
 {
-  "kind": "singleType",
+  "kind": "collectionType",
   "collectionName": "entries",
   "info": {
     "singularName": "entry",
     "pluralName": "entries",
-    "displayName": "entry",
-    "description": ""
+    "displayName": "entry"
   },
   "options": {
     "draftAndPublish": true
@@ -26,6 +25,22 @@
     },
     "moved": {
       "type": "integer"
+    },
+    "created": {
+      "type": "date"
+    },
+    "picture": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "slug": {
+      "type": "uid"
     }
   }
 }

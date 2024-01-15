@@ -362,13 +362,12 @@ export interface AdminTransferTokenPermission extends Schema.CollectionType {
   };
 }
 
-export interface ApiEntryEntry extends Schema.SingleType {
+export interface ApiEntryEntry extends Schema.CollectionType {
   collectionName: 'entries';
   info: {
     singularName: 'entry';
     pluralName: 'entries';
     displayName: 'entry';
-    description: '';
   };
   options: {
     draftAndPublish: true;
@@ -379,6 +378,9 @@ export interface ApiEntryEntry extends Schema.SingleType {
     label: Attribute.String;
     active: Attribute.Boolean;
     moved: Attribute.Integer;
+    created: Attribute.Date;
+    picture: Attribute.Media;
+    slug: Attribute.UID;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
